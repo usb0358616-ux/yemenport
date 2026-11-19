@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#1e3a5f" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>نظام المنافذ والجوازات الذكي</title>
+    <meta name="description" content="نظام متكامل للمعاينة على المسافرين، جوازات السفر، المطلوبين أمنياً، وبلاغات الضبط والمنافذ الحدودية اليمنية." />
+    <meta property="og:title" content="نظام المنافذ والجوازات الذكي" />
+    <meta property="og:description" content="نظام متكامل للمعاينة على المسافرين، جوازات السفر، المطلوبين أمنياً، وبلاغات الضبط والمنافذ الحدودية اليمنية." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="./assets/aistudio/ic_launcher_e65b28d6.png" />
+    <link rel="apple-touch-icon" href="./assets/aistudio/ic_launcher_e65b28d6.png" />
+  </head>
+  <body>
+    <div id="root">
+      <div id="app-boot-loader" style="font-family:system-ui,-apple-system,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:#1e3a5f;background:#f8fafc;text-align:center;padding:24px" dir="rtl">
+        <img src="./assets/aistudio/ic_launcher_e65b28d6.png" alt="الشعار" style="height:56px;object-fit:contain" />
+        <p style="margin:0;font-size:14px;font-weight:700">جاري تحميل نظام المنافذ والجوازات الذكي...</p>
+      </div>
+      <div id="raw-entry-fallback" style="display:none;font-family:system-ui,-apple-system,sans-serif;max-width:560px;margin:48px auto;padding:28px;border-radius:20px;background:#ffffff;border:1px solid #cbd5e1;box-shadow:0 12px 32px rgba(15,23,42,0.08);text-align:center;color:#0f172a;line-height:1.8" dir="rtl">
+        <img src="./assets/aistudio/ic_launcher_e65b28d6.png" alt="الشعار" style="height:64px;margin:0 auto 12px;display:block;object-fit:contain" />
+        <h2 style="margin:0 0 8px;font-size:20px;color:#1e3a5f">نظام المنافذ والجوازات الذكي (نسخة العمل المحلي)</h2>
+        <p style="margin:0 0 16px;font-size:14px;color:#475569">
+          يبدو أنك فتحت ملف المصدر الخام مباشرة من محرر الأكواد عبر بروتوكول الملفات دون تجميع Vite.
+          للعمل محلياً بدون إنترنت بشكل فوري، افتح النسخة المجمعة الجاهزة في مجلد <strong>dist</strong>:
+        </p>
+        <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:16px">
+          <a href="./dist/index.html" style="background:#1e3a5f;color:#fff;text-decoration:none;padding:10px 20px;border-radius:12px;font-weight:700;font-size:14px">
+            تشغيل النسخة المحلية الجاهزة (dist/index.html)
+          </a>
+        </div>
+        <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px;font-size:12px;color:#334155;text-align:right">
+          <strong>أو من موجه الأوامر (Terminal):</strong><br />
+          1. لتشغيل وضع التطوير: <code style="background:#e2e8f0;padding:2px 6px;border-radius:4px">npm run dev</code><br />
+          2. لبناء نسخة الويب المحلية: <code style="background:#e2e8f0;padding:2px 6px;border-radius:4px">npm run build</code> ثم تشغيل مجلد <code style="background:#e2e8f0;padding:2px 6px;border-radius:4px">dist</code>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        if (window.location.protocol === 'file:') {
+          var loader = document.getElementById('app-boot-loader');
+          var fb = document.getElementById('raw-entry-fallback');
+          if (loader) loader.style.display = 'none';
+          if (fb) fb.style.display = 'block';
+        }
+      })();
+    </script>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>
+
